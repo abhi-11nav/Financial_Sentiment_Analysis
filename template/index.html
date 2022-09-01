@@ -1,0 +1,29 @@
+ <!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+	<meta charset = "UTF=8">
+	<title> FINANCIAL STATEMENT SENTIMENT ANALYSIS </title>
+</head>
+
+<body>
+	<div class="login">
+		<h1> FINANCIAL NEWS SENTIMENT ANALYSIS </h1>
+		<form action="{{ url_for('predict')}}"method="post">
+	    	<input class="features" name="news_" placeholder="news_" required="required"/>
+	    <br>
+  		<br>
+   		
+   		<button type="SUBMIT" class="btn btn-primary btn-block btn-large">predict</button>
+		</form>
+
+   		<br>
+   		<br>
+   		<div id="prediction_text">
+   		{{ prediction_text }}
+   		</div>
+
+ 	</div>
+
+</body>
+</html> 
